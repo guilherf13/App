@@ -1,2 +1,2 @@
 # App
-É um Fremework_Project_mvc
+Fremework para futuras criações de Projetos
