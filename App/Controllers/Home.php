@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 
-class Home{
+use App\Controllers\Abstracts\BaseController;
 
-    public static function home()
+class Home extends BaseController{
+
+    public function home()
     {
-        echo 'Home Page Executed';
+        $this->views("HomePage", "teste");
     }
 }
