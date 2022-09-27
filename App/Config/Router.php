@@ -2,8 +2,6 @@
 
 namespace App\Config;
 
-use App\Controllers\About;
-
 class Router
 {
     public static function configRouters(\App\Router\Router $router)

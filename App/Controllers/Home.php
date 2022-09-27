@@ -2,12 +2,12 @@
 
 namespace App\Controllers;
 
-use App\Controllers\Abstracts\BaseController;
+use App\Controllers\Abstracts\BaseControllers;
 
-class Home extends BaseController{
+class Home extends BaseControllers{
 
     public function home()
     {
-        $this->views("HomePage", "teste");
+        $this->views("HomeView", []);
     }
 }

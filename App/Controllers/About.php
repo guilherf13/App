@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Controllers;
+use App\Controllers\Abstracts\BaseControllers;
 
-class About{
+class About extends BaseControllers{
 
-    public static function about()
+    public function about ()
     {
-        echo 'about';
+        $this->views("About", []);
     }
 }
