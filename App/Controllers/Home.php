@@ -8,6 +8,7 @@ class Home extends BaseControllers{
 
     public function home()
     {
-        $this->views("HomeView", []);
+        
+        $this->views("index", []);
     }
 }
