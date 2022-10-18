@@ -3,9 +3,9 @@ require_once("./vendor/autoload.php");
 
 error_reporting(E_ALL);
 
-use App\Router\Router;
+use App\Router\Routing;
 
-$router = new Router;
+$router = new Routing;
 
 \App\Config\Router::configRouters($router);
 

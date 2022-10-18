@@ -26,9 +26,9 @@ class Routing
         $this->routers[] = new Route($uri, Route::Method_POST, $class, $functionName);
     }
 
-    public function setBaseUrl($url)
+    public function setBaseUrl($baseUrl)
     {
-        $this->baseUrl = $url;
+        $this->baseUrl = $baseUrl;
     }
 
     public function run()
