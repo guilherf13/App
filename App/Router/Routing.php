@@ -2,7 +2,7 @@
 
 namespace App\Router;
 
-class Router
+class Routing
 {
 
     private $baseUrl;

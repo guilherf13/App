@@ -1,9 +1,11 @@
 <?php
 namespace App\Controllers;
 
-class send_contact{
-    public static function send_contact()
+use \App\Controllers\Abstracts\BaseControllers;
+
+class send_contact extends BaseControllers{
+    public function send_contact()
     {
-        echo 'send_contact';
+        $this->views('send_contact',[]);
     }
 }

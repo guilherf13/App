@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 
-class Contact{
+use App\Controllers\Abstracts\BaseControllers;
 
-    public static function contact()
+class Contact extends BaseControllers{
+
+    public function contact()
     {
-        echo 'Contact';
+        $this->views('contact',[]);
     }
 }

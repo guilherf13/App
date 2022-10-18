@@ -4,18 +4,18 @@ namespace App\Config;
 
 class Router
 {
-    public static function configRouters(\App\Router\Router $router)
+    public static function configRouters(\App\Router\Routing $routing)
     {
 
-        $router->setBaseUrl('http://localhost/Projeto/App/index.php');
+        $routing->setBaseUrl('http://localhost/Projeto/App/index.php');
 
-        $router->getErro404(function () {
+        $routing->getErro404(function () {
             echo 'Erro 404';
         });
 
-        $router->get('/', \App\Controllers\Home::class, "home");
-        $router->get('/about', \App\Controllers\About::class, "about");
-        $router->get('/contact', \App\Controllers\Contact::class, "contact");
-        $router->post('/send_contact',\App\Controllers\send_contact::class, "send_contact");
+        $routing->get('/', \App\Controllers\Home::class, "home");
+        $routing->get('/about', \App\Controllers\About::class, "about");
+        $routing->get('/contact', \App\Controllers\Contact::class, "contact");
+        $routing->post('/send_contact',\App\Controllers\send_contact::class, "send_contact");
     }
 }

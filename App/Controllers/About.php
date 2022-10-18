@@ -7,6 +7,7 @@ class About extends BaseControllers{
 
     public function about ()
     {
-        $this->views("About", []);
+        $data['page'] = 'about';
+        $this->views("index", $data);
     }
 }
